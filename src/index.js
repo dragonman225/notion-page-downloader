@@ -25,8 +25,11 @@ async function main() {
     <link rel="stylesheet" type="text/css" href="css/notion-color.css">
     <link rel="stylesheet" type="text/css" href="css/theme.css">
     <style>
+      div {
+        margin: 0.8em auto;
+      }
       .container {
-        padding: 2.5em;
+        padding: 1.5em;
       }
       code {
         background-color: rgba(135,131,120,0.15);
