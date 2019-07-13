@@ -3,7 +3,7 @@ const NotionAgent = require('notionapi-agent')
 const config = require('../config')
 
 const options = {
-  cookie: config.cookie
+  token: config.token
 }
 const agent = new NotionAgent(options)
 

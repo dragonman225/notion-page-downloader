@@ -1,3 +1,4 @@
+
 <html>
   <head>
     <meta charset="utf-8">
@@ -7,10 +8,16 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <!-- Chrome, Firefox OS and Opera Status Bar Color -->
     <meta name="theme-color" content="#FFB900">
-    <title>Keyboard & Markdown Shortcuts</title>
+    <title>Blog Post</title>
     <link rel="stylesheet" type="text/css" href="css/notion-color.css">
     <link rel="stylesheet" type="text/css" href="css/theme.css">
     <style>
+      @media only screen and (max-width: 680px) {
+        .column {
+          width: 100% !important;
+          margin-left: 0 !important;
+        }
+      }
       .container {
         padding: 2.5em;
       }
@@ -20,10 +27,8 @@
       details {
         margin: 7px auto;
       }
-      details div {
-        margin: 5px auto;
-      }
       details > div {
+        margin: 3px 0;
         margin-left: 28px;
       }
       details > summary {
@@ -35,9 +40,14 @@
       li {
         margin-top: 0;
       }
+      ul {
+        list-style-type: disc;
+      }
+      img {
+        margin: 0 auto;
+      }
       .bookmark {
         transition: background 120ms ease-in 0s;
-        margin: 0.8em auto;
       }
       .bookmark:hover {
         background: rgba(55, 53, 47, 0.08);
@@ -48,1114 +58,372 @@
       .indent {
         padding-left: 28px;
       }
+      .block {
+        margin: 3px 0;
+      }
     </style>
   </head>
   <body>
     <div class="container">
         <div>
-    <h1>Keyboard & Markdown Shortcuts</h1>
-    <div>  <div>
-    <div>  <span>
-    Notion is fully equipped with keyboard and Markdown shortcuts so you can do everything you need without ever touching your mouse 🐭
-  </span>
-  </div>
-    <div class="indent"></div>
-  </div>
+    <h1>Blog Post</h1>
     <div>
+      
+    <div id="a6132a8d-ca9e-4bfb-961d-efcda45f0db4" class="block color-gray">
+      
+  <div class="block color-gray" style="padding: 3px 2px;">
     <div>  <span>
-    👉 <strong>Note:</strong> You&#x27;ll see <code>cmd&#x2F;ctrl</code> used a lot in the shortcuts below. This indicates <code>command</code> on Mac and <code>control</code> on Windows. (For now, these instructions are for English&#x2F;QWERTY keyboards only — but internationalization is on our roadmap!)
+    A conversation with Ray Garcia, Jonathan Gold, Evan Kleiman, Bricia Lopez, and Carlos Salgado about the evolving role of Mexican cuisine in LA as culture, art, and craft
   </span>
   </div>
-    <div class="indent"></div>
-  </div>
-  <h2>  <span>
-    Most popular
-  </span>
-  </h2>  <div>
-    <div>  <span>
-    If you&#x27;re not a born shortcutter, we get it. You can still work like a Notion power user if you remember these few commands:
-  </span>
-  </div>
-    <div class="indent"></div>
-  </div>
-    <ul>
-    <li>
-      <div>  <span>
-    Press <code>cmd&#x2F;ctrl + n</code> to create a new page.
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-    <ul>
-    <li>
-      <div>  <span>
-    Press <code>cmd&#x2F;ctrl + shift + n</code> or use <code>cmd&#x2F;ctrl + click</code> to open a new Notion window.
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-    <ul>
-    <li>
-      <div>  <span>
-    Press <code>cmd&#x2F;ctrl + p</code> to open search (or jump to recently viewed pages ✨)
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-    <ul>
-    <li>
-      <div>  <span>
-    Press <code>cmd&#x2F;ctrl + [</code> to go back a page.
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-    <ul>
-    <li>
-      <div>  <span>
-    Press <code>cmd&#x2F;ctrl + ]</code> to go forward a page.
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-    <ul>
-    <li>
-      <div>  <span>
-    Press <code>cmd&#x2F;ctrl + shift + l</code> to switch to Dark Mode. (That&#x27;s an L, not a 1.)
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-  <h2>  <span>
-    Markdown style
-  </span>
-  </h2>  <div>
-    <div>  <span>
-    <strong>While typing:</strong>
-  </span>
-  </div>
-    <div class="indent"></div>
-  </div>
-    <ul>
-    <li>
-      <div>  <span>
-    Type <code>**</code> on either side of your text to <strong>bold.</strong>
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-    <ul>
-    <li>
-      <div>  <span>
-    Type <code>*</code> on either side of your text to <em>italicize</em>.
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-    <ul>
-    <li>
-      <div>  <span>
-    Type <code>`</code> on either side of your text to create <code>inline code</code>. (Symbol to the left of your 1 key.)
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-    <ul>
-    <li>
-      <div>  <span>
-    Type <code>~</code> on either side of your text for <del>strikethrough</del>.
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-    <div>
-    <div>  <span>
-    <strong>At the beginning of any line of text, try these shortcuts:</strong>
-  </span>
-  </div>
-    <div class="indent"></div>
-  </div>
-    <ul>
-    <li>
-      <div>  <span>
-    Type <code>*</code>, <code>-</code>, or <code>+</code> followed by <code>space</code> to create a bulleted list.
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-    <ul>
-    <li>
-      <div>  <span>
-    Type <code>[]</code> to create a to-do checkbox. (There&#x27;s no <code>space</code> in between.)
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-    <ul>
-    <li>
-      <div>  <span>
-    Type <code>1.</code> then <code>space</code> to create a numbered list.
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-    <ul>
-    <li>
-      <div>  <span>
-    Type <code>#</code> then <code>space</code> to create an H1 header.
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-    <ul>
-    <li>
-      <div>  <span>
-    Type <code>##</code> then <code>space</code> to create an H2 sub-header.
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-    <ul>
-    <li>
-      <div>  <span>
-    Type <code>###</code> then <code>space</code> to create an H3 sub-header.
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-    <ul>
-    <li>
-      <div>  <span>
-    Type <code>&gt;</code> then <code>space</code> to create a toggle list.
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-    <ul>
-    <li>
-      <div>  <span>
-    Type <code>&quot;</code> then <code>space</code> to create a quote block.
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-  <h2>  <span>
-    Create and style your content
-  </span>
-  </h2>  <ul>
-    <li>
-      <div>  <span>
-    Press <code>enter</code> to insert a line of text.
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-    <ul>
-    <li>
-      <div>  <span>
-    Press <code>shift + enter</code> to create a line break within a block of text.
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-    <ul>
-    <li>
-      <div>  <span>
-    Press <code>cmd&#x2F;ctrl + shift + m</code> to create a comment.
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-    <ul>
-    <li>
-      <div>  <span>
-    Type <code>---</code> to create a divider. (Three dashes in a row.)
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-    <ul>
-    <li>
-      <div>  <span>
-    With text selected, press <code>cmd&#x2F;ctrl + b</code> to <strong>bold text</strong>.
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-    <ul>
-    <li>
-      <div>  <span>
-    With text selected, press <code>cmd&#x2F;ctrl + i</code> to <em>italicize text</em>.
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-    <ul>
-    <li>
-      <div>  <span>
-    With text selected, press <code>cmd&#x2F;ctrl + shift + s</code> for <del>strikethrough</del>.
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-    <ul>
-    <li>
-      <div>  <span>
-    With text selected, press <code>cmd&#x2F;ctrl + k</code> to add a link. You can also paste a URL over selected text to turn it into a link using <code>cmd&#x2F;ctrl + v</code>.
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-    <ul>
-    <li>
-      <div>  <span>
-    With text selected, press <code>cmd&#x2F;ctrl + e</code> for inline code.
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-    <ul>
-    <li>
-      <div>  <span>
-    Press <code>tab</code> to indent. <strong>Note:</strong> Whenever you indent, you&#x27;re nesting your current block into the block above it. For example:
-  </span>
-  </div>
-      <div>  <ul>
-    <li>
-      <div>  <span>
-    Block 1 ← Parent block
-  </span>
-  </div>
-      <div>  <ul>
-    <li>
-      <div>  <span>
-    Block 2 ← Child block inside block 1
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-  </div>
-    </li>
-  </ul>
-  </div>
-    </li>
-  </ul>
-    <ul>
-    <li>
-      <div>  <span>
-    Press <code>shift + tab</code> to un-indent. (<strong>Note:</strong> This changes a child block into a parent block, which could change the order in which it appears.)
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-    <ul>
-    <li>
-      <div>  <span>
-    Type <code>&#x2F;turn</code> at the beginning or end of a block to turn it into a different type of block. Example: turn text into a heading or into a todo or bullet item.
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-    <div>
-    <div>  <span>
-    
-  </span>
-  </div>
-    <div class="indent"></div>
-  </div>
-    <ul>
-    <li>
-      <div>  <span>
-    Type <code>&#x2F;color</code> at the beginning or end of any text block to change its color or highlight color. To remove a color or highlight, just turn the text back to black.
-Example: <code>&#x2F;blue</code>, <code>&#x2F;blue background</code>
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-    <div>
-    <div>  <span>
-    
-  </span>
-  </div>
-    <div class="indent"></div>
-  </div>
-    <div>
-    <div>  <span>
-    <strong>Note:</strong> For all of the below, the <code>cmd + option</code> combination is for Mac, and the <code>ctrl+shift</code> combination works on Windows and Linux.
-  </span>
-  </div>
-    <div class="indent"></div>
-  </div>
-    <ul>
-    <li>
-      <div>  <span>
-    Press <code>cmd&#x2F;ctrl + option&#x2F;shift + 0</code> to create text.
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-    <ul>
-    <li>
-      <div>  <span>
-    Press <code>cmd&#x2F;ctrl + option&#x2F;shift + 1</code> to create an H1 header.
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-    <ul>
-    <li>
-      <div>  <span>
-    Press <code>cmd&#x2F;ctrl + option&#x2F;shift + 2</code> to create an H2 header.
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-    <ul>
-    <li>
-      <div>  <span>
-    Press <code>cmd&#x2F;ctrl + option&#x2F;shift + 3</code> to create an H3 header.
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-    <ul>
-    <li>
-      <div>  <span>
-    Press <code>cmd&#x2F;ctrl + option&#x2F;shift + 4</code> to create a to-do checkbox.
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-    <ul>
-    <li>
-      <div>  <span>
-    Press <code>cmd&#x2F;ctrl + option&#x2F;shift + 5</code> to create a Bulleted List.
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-    <ul>
-    <li>
-      <div>  <span>
-    Press <code>cmd&#x2F;ctrl + option&#x2F;shift + 6</code> to create a Numbered List.
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-    <ul>
-    <li>
-      <div>  <span>
-    Press <code>cmd&#x2F;ctrl + option&#x2F;shift + 7</code> to create a Toggle List.
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-    <ul>
-    <li>
-      <div>  <span>
-    Press <code>cmd&#x2F;ctrl + option&#x2F;option + 8</code> to create a code block. Example:
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-    <div>
-    <div>  <span>
-    
-  </span>
-  </div>
-    <div class="indent"></div>
-  </div>
-    <ul>
-    <li>
-      <div>  <span>
-    Press <code>cmd&#x2F;ctrl + option&#x2F;shift + 9</code> to create a new page, or turn whatever you have on a line into a page.
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-    <ul>
-    <li>
-      <div>  <span>
-    Duplicate any content on a Notion page by holding down <code>option&#x2F;alt</code> as you drag and drop:
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-  <h2>  <span>
-    Make changes to blocks
-  </span>
-  </h2>  <div>
-    <div>  <span>
-    Everything in Notion is a block — from a line of type to an image or embed. These shortcuts let you edit whole blocks once they&#x27;re selected.
-  </span>
-  </div>
-    <div class="indent"></div>
-  </div>
-    <ul>
-    <li>
-      <div>  <span>
-    Press <code>esc</code> to select the block you&#x27;re currently in. Or to clear selected blocks.
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-    <ul>
-    <li>
-      <div>  <span>
-    Press <code>cmd&#x2F;ctrl + a</code> once to select the block you&#x27;re in and twice to select all blocks on the page.
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-    <ul>
-    <li>
-      <div>  <span>
-    Press <code>space</code> to open a selected image in full-screen.
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-    <ul>
-    <li>
-      <div>  <span>
-    Press <code>arrow keys</code> to select a different block.
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-    <ul>
-    <li>
-      <div>  <span>
-    Hold down <code>shift + up&#x2F;down arrow keys</code> to expand your selection up or down.
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-    <ul>
-    <li>
-      <div>  <span>
-    Use <code>cmd + shift + click</code> on Mac, and <code>option + shift + click</code> on Windows to select or de-select an entire block.
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-    <ul>
-    <li>
-      <div>  <span>
-    Use <code>shift + click</code> to select another block and all blocks in between.
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-    <ul>
-    <li>
-      <div>  <span>
-    Press <code>backspace</code> or <code>delete</code> to delete selected blocks.
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-    <ul>
-    <li>
-      <div>  <span>
-    Press <code>cmd&#x2F;ctrl + d</code> to duplicate the blocks you&#x27;ve selected.
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-    <ul>
-    <li>
-      <div>  <span>
-    Press <code>enter</code> to edit any text inside a selected block (or open a page block).
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-    <ul>
-    <li>
-      <div>  <span>
-    Press <code>cmd&#x2F;ctrl + &#x2F;</code> to edit or change one or more selected blocks.
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-    <div>
-    <div>  <span>
-    
-  </span>
-  </div>
-    <div class="indent"></div>
-  </div>
-    <ul>
-    <li>
-      <div>  <span>
-    In board view, select multiple cards then use <code>cmd&#x2F;ctrl + &#x2F;</code> to edit them all at once. Example: Change the status of several tasks from <strong>this week</strong> to <strong>in progress</strong>.
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-    <div>
-    <div>  <span>
-    
-  </span>
-  </div>
-    <div class="indent"></div>
-  </div>
-    <ul>
-    <li>
-      <div>  <span>
-    Hold <code>cmd&#x2F;ctrl + shift + arrow keys</code> to move a selected block around.
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-    <ul>
-    <li>
-      <div>  <span>
-    Press <code>cmd&#x2F;ctrl + option&#x2F;alt + t</code> to expand or close all toggles in a toggle list.
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-    <ul>
-    <li>
-      <div>  <span>
-    Press <code>cmd&#x2F;ctrl + shift + h</code> to apply the last text or highlight color you used.
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-    <ul>
-    <li>
-      <div>  <span>
-    Press <code>cmd&#x2F;ctrl + enter</code> to activate the current block you&#x27;re in. Activate means:
-  </span>
-  </div>
-      <div>  <ul>
-    <li>
-      <div>  <span>
-    Open a page
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-  </div><div>  <ul>
-    <li>
-      <div>  <span>
-    Check or uncheck a to-do checkbox
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-  </div><div>  <ul>
-    <li>
-      <div>  <span>
-    Open or close a toggle list item
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-  </div><div>  <ul>
-    <li>
-      <div>  <span>
-    Make embeds or images full-screen
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-  </div>
-    </li>
-  </ul>
-  <h2>  <span>
-    @ commands
-  </span>
-  </h2>  <ul>
-    <li>
-      <div>  <span>
-    <strong>Person - </strong>Type <code>@</code> and another workspace member&#x27;s name to get their attention on something. Useful in comments or discussions.
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-    <ul>
-    <li>
-      <div>  <span>
-    <strong>Page - </strong>Type <code>@</code> and the name of another page in your workspace to create a link to it. If you change the name of the page, this link will automatically change too.
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-    <ul>
-    <li>
-      <div>  <span>
-    <strong>Date</strong> <strong>- </strong>Type <code>@</code> and any date in any format (or yesterday, today or tomorrow, or even next Wednesday). Helpful for giving yourself due dates.
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-    <ul>
-    <li>
-      <div>  <span>
-    <strong>Reminder - </strong>Type <code>@</code> and any date in any format (including yesterday, today, tomorrow, etc.). You&#x27;ll be sent a notification when that date arrives. You can click on the link that appears to adjust the date and exact time you want to be reminded. <a href="https://www.notion.so/notion/Reminder-notifications-b4325370e2744d999c021900e76c9abb"><span class="color-red">More on reminders here</span></a>.
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-    <ul>
-    <li>
-      <div>  <span>
-    Hit <code>esc</code> to dismiss the @-command menu if you simply want to type @.
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-  <h2>  <span>
-    Slash commands
-  </span>
-  </h2>  <div>
-    <div>  <span>
-    Pressing <code>&#x2F;</code> in Notion brings up a full menu of blocks you can choose to insert. You can shortcut this by pressing <code>&#x2F;</code> and then typing what you want. Here are your choices:
-  </span>
-  </div>
-    <div class="indent"></div>
-  </div>
-  <h4>  <span>
-    Basic
-  </span>
-  </h4>  <ul>
-    <li>
-      <div>  <span>
-    <code>&#x2F;text</code> creates a new text block.
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-    <ul>
-    <li>
-      <div>  <span>
-    <code>&#x2F;page</code> creates a new page (and will open it automatically when you press <code>enter</code>).
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-    <ul>
-    <li>
-      <div>  <span>
-    <code>&#x2F;bullet</code> creates a bulleted list.
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-    <ul>
-    <li>
-      <div>  <span>
-    <code>&#x2F;num</code> creates a numbered list.
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-    <ul>
-    <li>
-      <div>  <span>
-    <code>&#x2F;todo</code> creates a to-do list with checkboxes.
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-    <ul>
-    <li>
-      <div>  <span>
-    <code>&#x2F;toggle</code> creates a toggle list.
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-    <ul>
-    <li>
-      <div>  <span>
-    <code>&#x2F;div</code> creates a divider.
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-    <ul>
-    <li>
-      <div>  <span>
-    <code>&#x2F;quote</code> creates a quote block of larger text.
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-    <ul>
-    <li>
-      <div>  <span>
-    <code>&#x2F;h1</code> creates a large heading.
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-    <ul>
-    <li>
-      <div>  <span>
-    <code>&#x2F;h2</code> creates a medium-sized heading.
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-    <ul>
-    <li>
-      <div>  <span>
-    <code>&#x2F;h3</code> creates a small heading.
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-    <ul>
-    <li>
-      <div>  <span>
-    <code>&#x2F;link</code> creates a link to another page in your workspace.
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-    <ul>
-    <li>
-      <div>  <span>
-    <code>esc</code> clears the <code>&#x2F;</code> menu. Handy if you&#x27;re just trying to use a &#x2F; in your writing. <strong>Note:</strong> <code>esc</code> also clears the menu that pops up when you type <code>@</code> as well.
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-  <h4>  <span>
-    Database
-  </span>
-  </h4>  <ul>
-    <li>
-      <div>  <span>
-    <code>&#x2F;table-inline</code> creates a database table inside a current page.
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-    <ul>
-    <li>
-      <div>  <span>
-    <code>&#x2F;board-inline</code> creates a Kanban board inside a current page.
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-    <ul>
-    <li>
-      <div>  <span>
-    <code>&#x2F;calendar-inline</code> creates a calendar inside a current page.
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-    <ul>
-    <li>
-      <div>  <span>
-    <code>&#x2F;list-inline</code> creates a list-style database inside a current page.
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-    <ul>
-    <li>
-      <div>  <span>
-    <code>&#x2F;gallery-inline</code> creates a gallery inside a current page.
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-    <ul>
-    <li>
-      <div>  <span>
-    Any of the above can also be created with <code>-full</code> instead of <code>-inline</code> to open that type of database view in its own page automatically. For example:
-  </span>
-  </div>
-      <div>  <ul>
-    <li>
-      <div>  <span>
-    <code>&#x2F;table-full</code>, <code>&#x2F;board-full</code>
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-  </div>
-    </li>
-  </ul>
-    <ul>
-    <li>
-      <div>  <span>
-    <code>&#x2F;linked</code> creates a Linked Database - essentially a copy of an existing database that you can insert into any page in-line and filter however you want.
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-  <h4>  <span>
-    Media
-  </span>
-  </h4>  <ul>
-    <li>
-      <div>  <span>
-    <code>&#x2F;image</code> will bring up the option to upload or embed an image.
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-    <ul>
-    <li>
-      <div>  <span>
-    <code>&#x2F;pdf</code> lets you paste in a URL to any PDF so it will display in-line on your page.
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-    <ul>
-    <li>
-      <div>  <span>
-    <code>&#x2F;book</code> lets you paste in a URL to any website to create a web bookmark. Like this:
-  </span>
-  </div>
+    <div class="indent">
       
-    </li>
-  </ul>
-    <div class="bookmark">
-    <div style="display: flex;">
-      <div style="display: flex; flex-wrap: wrap-reverse; align-items: stretch; text-align: left; overflow: hidden; border: 1px solid rgba(55, 53, 47, 0.16); border-radius: 3px; position: relative; flex-grow: 1; color: rgb(55, 53, 47);">
-        <div style="flex: 4 1 180px; min-height: 60px; overflow: hidden; text-align: left;">
-          <a href="http://notion.so" target="_blank" rel="noopener noreferrer" style="display: block; color: inherit; text-decoration: none; height: 100%;">
-            <div style="cursor: pointer; user-select: none; transition: background 120ms ease-in 0s; width: 100%; display: block; padding: 14px; height: 100%;">
-              <div style="font-size: 14px; line-height: 20px; max-height: 20px; overflow: hidden;">Notion - The all-in-one workspace for your notes, tasks, wikis, and databases.</div>
-              <div style="font-size: 12px; line-height: 16px; color: rgba(55, 53, 47, 0.6); max-height: 32px; overflow: hidden;">A new tool that blends your everyday work apps into one. It's the all-in-one workspace for you and your team</div>
-              <div style="font-size: 12px; line-height: 16px; display: flex; overflow: hidden; margin-top: 4px;">
-                <img src="https://www.notion.so/images/favicon.ico" style="width: 16px; height: 16px; min-width: 16px; margin-right: 4px;">
-                <div style="min-width: 0px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">http://notion.so</div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div style="flex: 1 1 180px; min-height: 80px; display: block; position: relative;">
-          <div style="position: absolute; top: 0px; left: 0px; right: 0px; bottom: 0px;">
-            <div style="width: 100%; height: 100%;">
-              <img src="https://www.notion.so/images/meta.png" style="display: block; object-fit: cover; border-radius: 1px; width: 100%; height: 100%;">
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
-    <div>
-    <div>  <span>
+  
+    </div>
     
-  </span>
-  </div>
-    <div class="indent"></div>
-  </div>
-    <ul>
-    <li>
-      <div>  <span>
-    <code>&#x2F;video</code> lets you upload a video file or embed a video from YouTube, Vimeo, etc.
-  </span>
-  </div>
+    <div id="b3fc1d41-817d-4300-a818-6b0ff7c88362" class="block color-gray">
       
-    </li>
-  </ul>
-    <ul>
-    <li>
-      <div>  <span>
-    <code>&#x2F;audio</code> lets you upload an audio file or embed audio from Spotify, Soundcloud, etc.
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-    <ul>
-    <li>
-      <div>  <span>
-    <code>&#x2F;code</code> creates a code block where you can write and copy any snippet of code.
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-    <ul>
-    <li>
-      <div>  <span>
-    <code>&#x2F;file</code> lets you upload any file from your computer or create an embed.
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-    <ul>
-    <li>
-      <div>  <span>
-    <code>&#x2F;embed</code> lets you add any one of the <a href="https://embed.ly/providers">400+ embeds</a> that work with Notion.
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-  <h2>  <span>
-    Advanced
-  </span>
-  </h2>  <ul>
-    <li>
-      <div>  <span>
-    <code>&#x2F;comment</code> lets you create a comment on any block.
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-    <ul>
-    <li>
-      <div>  <span>
-    <code>&#x2F;button</code> gives you a button that duplicates any combination of blocks you define.
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-    <ul>
-    <li>
-      <div>  <span>
-    <code>&#x2F;bread</code> inserts a breadcrumb menu that shows where your current page is in your workspace.
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-    <ul>
-    <li>
-      <div>  <span>
-    <code>&#x2F;math</code> lets you write mathematical equations and symbols using <a href="https://www.math.brown.edu/~jhs/ReferenceCards/TeXRefCard.v1.5.pdf">TeX</a>.
-  </span>
-  </div>
-      
-    </li>
-  </ul>
-    <div>
+  <div class="block color-gray" style="padding: 3px 2px;">
     <div>  <span>
+    Source: <a href="http://blogs.getty.edu/iris/5-food-icons-on-the-evolving-role-of-mexican-cuisine-in-la/">Food Icons on the Evolving Role of Mexican Cuisine in LA</a>
+  </span>
+  </div>
+    <div class="indent">
+      
+    </div>
+  </div>
+  
+    </div>
     
+    <div id="1dc5b8ea-cc74-43e6-b0f9-a3ecdf53c07e" class="block ">
+      
+  <div class="block " style="padding: 3px 2px;">
+    <div>  <span>
+    Together, critic Jonathan Gold, food scholar Evan Kleiman, and chefs Ray Garcia, Bricia Lopez, and Carlos Salgado have spent more than a lifetime preparing, eating, and writing about Latin American cuisine. Before their recent <a href="http://www.getty.edu/visit/cal/events/ev_2035.html">panel discussion</a> at the Getty, offered in conjunction with Pacific Standard Time, they sat down with us to reflect on the role of Mexican cuisine in the life of Los Angeles and how we might expand our taste buds to go deeper.
   </span>
   </div>
-    <div class="indent"></div>
+    <div class="indent">
+      
+    </div>
   </div>
-    <div>
-    <div>  <span>
+  
+    </div>
     
-  </span>
-  </div>
-    <div class="indent"></div>
-  </div>
-    <div>
-    <div>  <span>
-    <strong>Something we didn&#x27;t cover?</strong>
-Message us in the app by clicking <code>?</code> at the bottom right on desktop (or in your sidebar on mobile). Or email us at <a href="mailto:team@makenotion.com">team@makenotion.com</a> ✌️
-  </span>
-  </div>
-    <div class="indent"></div>
-  </div>
-    <div>
-    <div>  <span>
+    <div id="77f91e07-4320-4493-bc56-ef109a5dada1" class="block ">
+      
+  <div class="column_list" style="display: flex; flex-wrap: wrap;">
     
+  <div class="column" style=" width: calc((100% - 46px) * 0.5); word-break: break-word;">
+    
+    <div id="14427128-ac04-440a-9ed4-99a42a02006b" class="block ">
+      
+  <div class="block " style="padding: 3px 2px;">
+    <div>  <span>
+    <strong>SS: As a chef (or critic), </strong><strong>do you consider yourself an artist?</strong>
   </span>
   </div>
-    <div class="indent"></div>
+    <div class="indent">
+      
+    </div>
+  </div>
+  
+    </div>
+    
+    <div id="c1bea25b-0d86-40fd-9b5d-177f1646b897" class="block ">
+      
+  <div class="block " style="padding: 3px 2px;">
+    <div>  <span>
+    <strong>EK:</strong> Art to me often has an intellectual component. I think of food preparation as a craft–I don’t think of it as art.
+  </span>
+  </div>
+    <div class="indent">
+      
+    </div>
+  </div>
+  
+    </div>
+    
+    <div id="d8acc404-e2b6-4385-ab80-9e5e4fa84454" class="block ">
+      
+  <div class="block " style="padding: 3px 2px;">
+    <div>  <span>
+    <strong>RG:</strong> My personal approach to food is more of a craftsman. I like having my tools in hand, sort of creating and building, and my approach is much more trial and error. It’s part social scientist, and part repair person or builder. I put food out, and wait for the reaction, and see what we can push, what we can improve.
+  </span>
+  </div>
+    <div class="indent">
+      
+    </div>
+  </div>
+  
+    </div>
+    
+  </div>
+  <div class="column" style="margin-left: 46px; width: calc((100% - 46px) * 0.5); word-break: break-word;">
+    
+    <div id="a0f052c2-9baf-40c4-af8d-7620d83bd59b" class="block ">
+        <div style="width: 4032px; margin: 0.5em auto; max-width: 100%;">
+    <img src="https://s3-us-west-2.amazonaws.com/public.notion-static.com/98d6f347-ca2d-47b7-bf48-47511630182f/maarten-van-den-heuvel-400626-unsplash.jpg" style="width: 100%; object-fit: cover;">
+  </div>
+  
+    </div>
+    
+    <div id="ba53d42b-04ca-4421-922a-94e1f13c3790" class="block color-gray">
+      
+  <div class="block color-gray" style="padding: 3px 2px;">
+    <div>  <span>
+    In the Getty Center auditorium for the recent “There Will Be Food“ panel.
+  </span>
+  </div>
+    <div class="indent">
+      
+    </div>
+  </div>
+  
+    </div>
+    
   </div>
   </div>
+    </div>
+    
+    <div id="160081c1-dff4-4c18-a068-d8572c0ecb2b" class="block ">
+      
+  <div class="block " style="padding: 3px 2px;">
+    <div>  <span>
+    <strong>JG:</strong> I’m a writer. Some people can call writers artists, some people cannot. In terms of food, there are people who approach cuisine from an art angle. Carlos Salgado is astonishing that way. His food is rooted in Mexican flavors, but there’s this level of abstraction in his food. Is it art as opposed to food? No, it’s food, but it’s being approached in a different way.
+  </span>
+  </div>
+    <div class="indent">
+      
+    </div>
+  </div>
+  
+    </div>
+    
+    <div id="546e545f-d928-4f21-882f-af7820c2c053" class="block ">
+      
+  <div class="block " style="padding: 3px 2px;">
+    <div>  <span>
+    <strong>CS:</strong> The highest point in my life is being with close family and friends, in the backyard over a fire, cooking over the course of many hours, sitting under the sky, and just filling this space with so much warmth. When I’m cooking there, I feel much more like an artist than when I worked in the highest-concept restaurants. They are like museums of food, accessible only with a certain level of literacy on the part of the diner, with a certain level of cultural experience and background.
+  </span>
+  </div>
+    <div class="indent">
+      
+    </div>
+  </div>
+  
+    </div>
+    
+    <div id="598bb3e6-efc0-42c1-8a0e-69056ec39b8b" class="block ">
+      
+  <div class="column_list" style="display: flex; flex-wrap: wrap;">
+    
+  <div class="column" style=" width: calc((100% - 46px) * 0.5); word-break: break-word;">
+    
+    <div id="ab9f0170-a4fe-464e-8e64-f973658528cd" class="block ">
+        <div style="width: 3630px; margin: 0.5em auto; max-width: 100%;">
+    <img src="https://s3-us-west-2.amazonaws.com/public.notion-static.com/88676b3e-f102-4307-a850-8c1cf98f7794/edgar-castrejon-459814-unsplash.jpg" style="width: 100%; object-fit: cover;">
+  </div>
+  
+    </div>
+    
+    <div id="2b68713c-4f47-4cb3-b707-45f5c2840d13" class="block color-gray">
+      
+  <div class="block color-gray" style="padding: 3px 2px;">
+    <div>  <span>
+    Tamale with pepitas at Taco María in Costa Mesa
+  </span>
+  </div>
+    <div class="indent">
+      
+    </div>
+  </div>
+  
+    </div>
+    
+  </div>
+  <div class="column" style="margin-left: 46px; width: calc((100% - 46px) * 0.5); word-break: break-word;">
+    
+    <div id="a74def8a-0c2e-4a34-ae08-40656068514e" class="block ">
+      
+  <div class="block " style="padding: 3px 2px;">
+    <div>  <span>
+    <strong>SS: This panel represents Mexican American cuisine in LA. What other kinds of Latin American cuisine or</strong><strong> particular dishes from other regions do you like?</strong>
+  </span>
+  </div>
+    <div class="indent">
+      
+    </div>
+  </div>
+  
+    </div>
+    
+    <div id="75f4c852-539b-46d4-93a1-3d6fae90e63e" class="block ">
+      
+  <div class="block " style="padding: 3px 2px;">
+    <div>  <span>
+    <strong>JG:</strong> El Salvadoreño cooking. It’s very basic, but the ways they use corn and greens and cheese. The fermentations are lovely.
+  </span>
+  </div>
+    <div class="indent">
+      
+    </div>
+  </div>
+  
+    </div>
+    
+    <div id="a841f2aa-e43e-4efe-9866-89de2e412ce1" class="block ">
+      
+  <div class="block " style="padding: 3px 2px;">
+    <div>  <span>
+    <strong>EK:</strong> I love Guatemalan tamales, maybe more than Mexican tamales. The masa is often mixed with potato, so it’s much more tender. They’re wrapped in banana leaves, so there’s a different flavor. And the way they are filled is different; often there’s olives or raisins or prunes in them.
+  </span>
+  </div>
+    <div class="indent">
+      
+    </div>
+  </div>
+  
+    </div>
+    
+  </div>
+  </div>
+    </div>
+    
+    <div id="2ae5f195-6274-4d75-9447-8472023ca022" class="block ">
+      
+  <div class="block " style="padding: 3px 2px;">
+    <div>  <span>
+    <strong>BL:</strong> I love Peruvian food. Everything from the ceviche to rice and beans, all of the flavors. It has so much depth.
+  </span>
+  </div>
+    <div class="indent">
+      
+    </div>
+  </div>
+  
+    </div>
+    
+    <div id="e08842c9-b896-4dc4-9ba6-85e6e8cc7c12" class="block ">
+      
+  <div class="block " style="padding: 3px 2px;">
+    <div>  <span>
+    <strong>CS:</strong> Baja coastal cuisine. The freshness of it–you eat seafood in the morning because it just came in. Very simply prepared, very intense, briny ocean flavors: big clams, oysters, shrimp. Big, big flavors.
+  </span>
+  </div>
+    <div class="indent">
+      
+    </div>
+  </div>
+  
+    </div>
+    
+    <div id="88961e30-c682-4a38-926b-88c8a5ac7ccb" class="block ">
+      
+  <div class="column_list" style="display: flex; flex-wrap: wrap;">
+    
+  <div class="column" style=" width: calc((100% - 46px) * 0.5); word-break: break-word;">
+    
+    <div id="21ac3267-e367-4f45-acea-b4f8c5bcf09c" class="block ">
+      
+  <div class="block " style="padding: 3px 2px;">
+    <div>  <span>
+    <strong>SS: If you could recommend one dish or element in Mexican-American cuisine that a total beginner must try, what would it be?</strong>
+  </span>
+  </div>
+    <div class="indent">
+      
+    </div>
+  </div>
+  
+    </div>
+    
+    <div id="1410ca79-5f07-4443-a7eb-fa1294b6a629" class="block ">
+      
+  <div class="block " style="padding: 3px 2px;">
+    <div>  <span>
+    <strong>EK:</strong> Tacos, because anything you eat with your hands is less intimidating than something that requires silverware. It takes you back to the permission of childhood, and that joy of just eating that is super direct. There is nothing in between you and the food.
+  </span>
+  </div>
+    <div class="indent">
+      
+    </div>
+  </div>
+  
+    </div>
+    
+    <div id="64614d34-919e-4f46-a9fc-810c12a3a230" class="block ">
+      
+  <div class="block " style="padding: 3px 2px;">
+    <div>  <span>
+    <strong>BL:</strong> I think mole is a really good one. A lot of people think of it as a chocolate sauce, and yes, it has chocolate, but it also has like 18 other things. I always recommend three things: mole, the barbacoa, and the chiles rellenos at my restaurant, just because I think they are universally delicious.
+  </span>
+  </div>
+    <div class="indent">
+      
+    </div>
+  </div>
+  
+    </div>
+    
+  </div>
+  <div class="column" style="margin-left: 46px; width: calc((100% - 46px) * 0.5); word-break: break-word;">
+    
+    <div id="33332238-4c7d-41aa-9edc-2c9870a8c90b" class="block ">
+        <div style="width: 4153px; margin: 0.5em auto; max-width: 100%;">
+    <img src="https://s3-us-west-2.amazonaws.com/public.notion-static.com/07d3113c-a91d-4b8f-83b5-7324575b74e2/christine-siracusa-363257-unsplash.jpg" style="width: 100%; object-fit: cover;">
+  </div>
+  
+    </div>
+    
+    <div id="a3251228-fd7a-4dfe-aa0a-fa857b822331" class="block color-gray">
+      
+  <div class="block color-gray" style="padding: 3px 2px;">
+    <div>  <span>
+    Dishes at Broken Spanish, in Downtown LA.
+  </span>
+  </div>
+    <div class="indent">
+      
+    </div>
+  </div>
+  
+    </div>
+    
+  </div>
+  </div>
+    </div>
+    
+    <div id="81d147a5-1bcc-4088-ba52-72dac6714d4f" class="block ">
+      
+  <div class="block " style="padding: 3px 2px;">
+    <div>  <span>
+    <strong>CS:</strong> I would say try more and different types of chilies, and the salsas that result from them. The range of flavors, and balance of flavors, is really exciting, and is my favorite part of Mexican food.
+  </span>
+  </div>
+    <div class="indent">
+      
+    </div>
+  </div>
+  
+    </div>
+    
+    <div id="30a76f51-fffc-4925-b70f-668169ec1a7b" class="block ">
+      
+  <div class="block " style="padding: 3px 2px;">
+    <div>  <span>
+    <strong>RG:</strong> Put aside your thoughts and limitations on what Mexican food can be, and how much it can cost. Especially in LA, there is almost a cult-like following for cheap Mexican food, for the greasy taco truck. There is something people find exciting about that, but I think it’s good to stop and wonder why your taco costs a dollar. There must be a lot behind it that allows you to eat a dollar taco. It probably doesn’t include a living wage, a safe work environment, or the best quality ingredients for you and your body. We could understand where our food is coming from and be a bit more conscious in our choices.
+  </span>
+  </div>
+    <div class="indent">
+      
+    </div>
+  </div>
+  
+    </div>
+    
+    </div>
   </div>
     </div>
   </body>

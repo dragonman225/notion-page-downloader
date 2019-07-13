@@ -6,12 +6,23 @@ const toHTML = require('notionast-util-to-html')
 const myAgent = require('./agent')
 const config = require('../config')
 
+main()
+
 async function main() {
   try {
     let pageID = config.pageID
     let tree = await downloadPageAsTree(pageID, myAgent)
     let contentHTML = toHTML(tree)
-    let pageHTML = `\
+    let pageHTML = renderPage(tree.data.title[0][0], contentHTML)
+    const pageHTMLFile = path.join(__dirname, '../data/index.html')
+    fs.writeFileSync(pageHTMLFile, pageHTML, { encoding: 'utf-8' })
+  } catch (error) {
+    console.error(error)
+  }
+}
+
+function renderPage(pageTitle, contentHTML) {
+  let pageHTML = `
 <html>
   <head>
     <meta charset="utf-8">
@@ -21,10 +32,16 @@ async function main() {
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <!-- Chrome, Firefox OS and Opera Status Bar Color -->
     <meta name="theme-color" content="#FFB900">
-    <title>${tree.data.title[0][0]}</title>
+    <title>${pageTitle}</title>
     <link rel="stylesheet" type="text/css" href="css/notion-color.css">
     <link rel="stylesheet" type="text/css" href="css/theme.css">
     <style>
+      @media only screen and (max-width: 680px) {
+        .column {
+          width: 100% !important;
+          margin-left: 0 !important;
+        }
+      }
       .container {
         padding: 2.5em;
       }
@@ -34,10 +51,8 @@ async function main() {
       details {
         margin: 7px auto;
       }
-      details div {
-        margin: 5px auto;
-      }
       details > div {
+        margin: 3px 0;
         margin-left: 28px;
       }
       details > summary {
@@ -49,9 +64,14 @@ async function main() {
       li {
         margin-top: 0;
       }
+      ul {
+        list-style-type: disc;
+      }
+      img {
+        margin: 0 auto;
+      }
       .bookmark {
         transition: background 120ms ease-in 0s;
-        margin: 0.8em auto;
       }
       .bookmark:hover {
         background: rgba(55, 53, 47, 0.08);
@@ -62,6 +82,9 @@ async function main() {
       .indent {
         padding-left: 28px;
       }
+      .block {
+        margin: 3px 0;
+      }
     </style>
   </head>
   <body>
@@ -69,13 +92,6 @@ async function main() {
       ${contentHTML}
     </div>
   </body>
-</html>
-`
-    const pageHTMLFile = path.join(__dirname, '../data/index.html')
-    fs.writeFileSync(pageHTMLFile, pageHTML, { encoding: 'utf-8' })
-  } catch (error) {
-    console.error(error)
-  }
+</html>`
+  return pageHTML
 }
-
-main()

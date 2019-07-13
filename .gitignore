@@ -1,6 +1,9 @@
 # Node.js
 node_modules/
 
+# Log
+*.log
+
 # macOS
 .DS_Store
 .AppleDouble
