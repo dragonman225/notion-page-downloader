@@ -43,7 +43,7 @@ function renderPage(pageTitle, contentHTML) {
         }
       }
       .container {
-        padding: 2.5em;
+        padding: 1.5em;
       }
       code {
         background-color: rgba(135,131,120,0.15);
