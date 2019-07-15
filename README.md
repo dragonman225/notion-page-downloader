@@ -13,6 +13,11 @@ Although recently Notion starts providing an option to export to HTML, my module
 
 This repository includes a rendering result as `data/index.html`. The original page is the [Blog Post](<https://www.notion.so/Blog-Post-20f83114dc15488eb5684c8c29821a4b>) template.
 
+## Upgrade from Previous Versions
+
+1. Delete `node_modules/` and `package_lock.json`.
+2. Run `npm install` or `pnpm install`.
+
 ## Setup
 
 1. Clone this repository.

@@ -1,7 +1,7 @@
 dependencies:
   notionapi-agent: 0.4.0
-  notionast-util-from-notionapi: 0.1.3
-  notionast-util-to-html: github.com/dragonman225/notionast-util-to-html/fda95986faad5d314a921c5f445a97c57136e4bb
+  notionast-util-from-notionapi: 0.2.0
+  notionast-util-to-html: github.com/dragonman225/notionast-util-to-html/ab0ae7c77d8d9b2ecdaf93f06990842802e4a097
 lockfileVersion: 5.1
 packages:
   /@dnpr/make-request/0.1.0:
@@ -14,17 +14,17 @@ packages:
     dev: false
     resolution:
       integrity: sha512-a85VocKWkrQ1UydCMCUy2tlKwK7LVJel66SmKSBij6lMa4E8DwDGrZBRRkLqB1qeIY/NdF+35AkjjPXyr9f0CA==
-  /notionast-util-from-notionapi/0.1.3:
+  /notionast-util-from-notionapi/0.2.0:
     dev: false
     resolution:
-      integrity: sha512-W91ubTd1bZ0N6JsenUhG8Ag4lW2EwSHuwZdhQRYbijlP1ogNvy+AwySEPVXBAAGYJ97w6kcApWLDnH9WTsX6fQ==
-  github.com/dragonman225/notionast-util-to-html/fda95986faad5d314a921c5f445a97c57136e4bb:
+      integrity: sha512-qY/rdQPwJioGWncsBpwqNnQ3AtEhSHSXsELKE57q8kdphJommfY8Nak3PqrC5kX7ZCPTr1iA861/Bn5BIan5Bw==
+  github.com/dragonman225/notionast-util-to-html/ab0ae7c77d8d9b2ecdaf93f06990842802e4a097:
     dev: false
     name: notionast-util-to-html
     resolution:
-      tarball: 'https://codeload.github.com/dragonman225/notionast-util-to-html/tar.gz/fda95986faad5d314a921c5f445a97c57136e4bb'
-    version: 0.0.3
+      tarball: 'https://codeload.github.com/dragonman225/notionast-util-to-html/tar.gz/ab0ae7c77d8d9b2ecdaf93f06990842802e4a097'
+    version: 0.0.5
 specifiers:
   notionapi-agent: ~0.4.0
-  notionast-util-from-notionapi: ~0.1.3
+  notionast-util-from-notionapi: ~0.2.0
   notionast-util-to-html: 'github:dragonman225/notionast-util-to-html'

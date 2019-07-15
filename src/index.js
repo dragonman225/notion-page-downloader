@@ -1,7 +1,7 @@
 const fs = require('fs')
 const path = require('path')
 const downloadPageAsTree = require('notionast-util-from-notionapi')
-const toHTML = require('notionast-util-to-html')
+const { toHTML } = require('notionast-util-to-html')
 
 const myAgent = require('./agent')
 const config = require('../config')
@@ -22,7 +22,7 @@ async function main() {
 }
 
 function renderPage(pageTitle, contentHTML) {
-  let pageHTML = `
+  let pageHTML = `\
 <html>
   <head>
     <meta charset="utf-8">
@@ -31,59 +31,16 @@ function renderPage(pageTitle, contentHTML) {
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <!-- Chrome, Firefox OS and Opera Status Bar Color -->
-    <meta name="theme-color" content="#FFB900">
+    <meta name="theme-color" content="#FFFFFF">
     <title>${pageTitle}</title>
+    <link rel="stylesheet" type="text/css" href="css/layout.css">
     <link rel="stylesheet" type="text/css" href="css/notion-color.css">
     <link rel="stylesheet" type="text/css" href="css/theme.css">
     <style>
-      @media only screen and (max-width: 680px) {
-        .column {
-          width: 100% !important;
-          margin-left: 0 !important;
-        }
-      }
       .container {
         padding: 1.5em;
-      }
-      code {
-        background-color: rgba(135,131,120,0.15);
-      }
-      details {
-        margin: 7px auto;
-      }
-      details > div {
-        margin: 3px 0;
-        margin-left: 28px;
-      }
-      details > summary {
-        margin-left: 6px;
-      }
-      details > summary:focus {
-        outline: none;
-      }
-      li {
-        margin-top: 0;
-      }
-      ul {
-        list-style-type: disc;
-      }
-      img {
+        max-width: 8.3in;
         margin: 0 auto;
-      }
-      .bookmark {
-        transition: background 120ms ease-in 0s;
-      }
-      .bookmark:hover {
-        background: rgba(55, 53, 47, 0.08);
-      }
-      .bookmark img, .bookmark div {
-        margin: 0;
-      }
-      .indent {
-        padding-left: 28px;
-      }
-      .block {
-        margin: 3px 0;
       }
     </style>
   </head>

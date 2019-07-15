@@ -1,0 +1,53 @@
+@media only screen and (max-width: 680px) {
+  .column {
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4 {
+  margin-bottom: 0;
+}
+
+ul, ol {
+  margin: 0;
+}
+
+/** For experiment: */
+/* .column {
+  margin-left: 46px;
+}
+
+.column:first-child {
+  margin-left: 0;
+} */
+
+.block {
+  margin: 3px 0;
+  padding: 3px 2px;
+  min-height: 1rem;
+}
+
+.block--indent, ul, ol {
+  padding-left: 28px;
+}
+
+.block--divider {
+  padding: 0.5rem 0;
+  width: 100%;
+}
+
+.block--callout {
+  display: flex;
+  border-radius: 5px;
+  padding: 0.5em 13px;
+}
+
+.block--bookmark img,
+.block--bookmark div {
+  margin: 0;
+}
