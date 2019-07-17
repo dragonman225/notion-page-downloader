@@ -4,6 +4,7 @@ body {
   font-size: 16px;
   font-weight: 400;
   color: #555;
+  margin: 0;
 }
 
 blockquote {
@@ -25,16 +26,8 @@ a:hover {
 
 h1, h2, h3, h4, h5, h6 {
   color: #333;
-}
-
-h1, h2, h3 {
   font-weight: 700;
-  margin: 20px auto 0 auto;
-}
-
-h4, h5, h6 {
-  font-weight: 700;
-  margin: 15px auto 0 auto;
+  margin: 0.8em auto 0 auto;
 }
 
 h1 {
