@@ -1,24 +1,25 @@
 # Notion Page Downloader
 
-This is a small application to demonstrate the following three modules of my Notion-related project.
+### What can users do ?
 
-* [notionapi-agent](https://github.com/dragonman225/notionapi-agent)
-* [notionast-util-from-notionapi](https://github.com/dragonman225/notionast-util-from-notionapi)
-* [notionast-util-to-html](https://github.com/dragonman225/notionast-util-to-html)
+* Run on a personal computer : Download a Notion page as a HTML file.
+* Run on the cloud : Host a static version of a Notion page on [Netlify](https://www.netlify.com).
 
-With this application users can download a Notion page as a HTML file. 
-Although recently Notion starts providing an option to export to HTML, my modules potentially give users more flexibility to customize how the blocks look.
+### How does this work ?
+
+This small application uses the following three of my projects.
+
+* [notionapi-agent](https://github.com/dragonman225/notionapi-agent) - Node.js wrapper for Notion's API.
+* [notionast-util-from-notionapi](https://github.com/dragonman225/notionast-util-from-notionapi) - Convert Notion's response objects of a page to a special tree structure.
+* [notionast-util-to-html](https://github.com/dragonman225/notionast-util-to-html) - Render HTML from the special tree structure.
 
 ## Demo
 
-This repository includes a rendering result as `public/index.html`. The original page is the [Blog Post](<https://www.notion.so/Blog-Post-20f83114dc15488eb5684c8c29821a4b>) template.
+[View example page on Netlify](https://notion2netlify.netlify.com/) ![Netlify Status](https://api.netlify.com/api/v1/badges/08b7e188-34d8-49c6-a2a2-ec2eb6f8f5da/deploy-status)
 
-## Upgrade from Previous Versions
+Also, you can take a look at `public/index.html`.
 
-1. Delete `node_modules/` and `package_lock.json`.
-2. Run `npm install` or `pnpm install`.
-
-## Setup
+## Usage : Run on a personal computer
 
 1. Clone this repository.
 
@@ -43,21 +44,36 @@ This repository includes a rendering result as `public/index.html`. The original
    pnpm install
    ```
 
-4. Duplicate `config.sample.json` as `config.json`
-
-   On Linux or macOS, you can use this command.
+4. Run setup script.
 
    ```bash
-   cp config.sample.json config.json
+   npm run setup
    ```
 
-## Usage
+5. Edit the `pageID` field of `config.json`. Get the URL of a Notion page, for example, `https://www.notion.so/Notion-Page-Downloader-0ec0e0370cdc452a848a6c04d18b05b3`, and the `pageID` should be `0ec0e037-0cdc-452a-848a-6c04d18b05b3`.
 
-1. If you want to download your private pages, open `config.json`, fill in your token (Follow this [guide](https://github.com/dragonman225/notionapi-agent/blob/master/docs/obtain_token.md) to obtain your token). Otherwise, go to the next step.
-2. Find the page ID of the page you want to download from browser's devtool, and fill in the `pageID` field of `config.json`. It must contain dashes, like `66e28cec-8105-48c3-a406-1513126766b0`.
-3. `npm run start`
-4. Result is saved as `public/index.html`.
+6. If the Notion page is private, you need to fill in your `token` in `config.json`. Follow this [guide](https://github.com/dragonman225/notionapi-agent/blob/master/docs/obtain_token.md) to obtain your token.
+
+7. Download the page as `public/index.html`.
+
+   ```bash
+   npm run start
+   ```
+
+## Usage : Run on the cloud
+
+1. [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/dragonman225/notion-page-downloader)
+2. Go to the new Git repository Netlify created. Edit the `pageID` field of `config.json`. Get the URL of a **PUBLIC** Notion page, for example, `https://www.notion.so/Notion-Page-Downloader-0ec0e0370cdc452a848a6c04d18b05b3`, and the `pageID` should be `0ec0e037-0cdc-452a-848a-6c04d18b05b3`.
+3. Netlify will deploy your page automatically.
+
+* To update the static page on Netlify, go to *Deploys* tab, click on *Trigger deploy > Deploy site*.
+* Private Notion pages can't be deployed. (Technically, it's possible, but saving your Notion login token in a Git repository means anyone with access to the repository can control your Notion account.)
 
 ## Supported Blocks
 
 Please view the list [here](https://github.com/dragonman225/notionast-util-to-html).
+
+## Upgrade from Previous Versions
+
+1. Delete `node_modules/` and `package_lock.json`.
+2. Run `npm install` or `pnpm install`.

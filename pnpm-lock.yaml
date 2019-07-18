@@ -1,7 +1,7 @@
 dependencies:
   notionapi-agent: 0.4.0
   notionast-util-from-notionapi: 0.2.0
-  notionast-util-to-html: github.com/dragonman225/notionast-util-to-html/ab0ae7c77d8d9b2ecdaf93f06990842802e4a097
+  notionast-util-to-html: 0.0.6
 lockfileVersion: 5.1
 packages:
   /@dnpr/make-request/0.1.0:
@@ -18,13 +18,11 @@ packages:
     dev: false
     resolution:
       integrity: sha512-qY/rdQPwJioGWncsBpwqNnQ3AtEhSHSXsELKE57q8kdphJommfY8Nak3PqrC5kX7ZCPTr1iA861/Bn5BIan5Bw==
-  github.com/dragonman225/notionast-util-to-html/ab0ae7c77d8d9b2ecdaf93f06990842802e4a097:
+  /notionast-util-to-html/0.0.6:
     dev: false
-    name: notionast-util-to-html
     resolution:
-      tarball: 'https://codeload.github.com/dragonman225/notionast-util-to-html/tar.gz/ab0ae7c77d8d9b2ecdaf93f06990842802e4a097'
-    version: 0.0.5
+      integrity: sha512-fWrZbgyusd5ttFZW7RQTP5dOT6M6+mlFjfYmTEqOBEugDnfkltTcWWjeK2UoBc9f1sdY1Iwh3mY7XU5QPDPfiw==
 specifiers:
   notionapi-agent: ~0.4.0
   notionast-util-from-notionapi: ~0.2.0
-  notionast-util-to-html: 'github:dragonman225/notionast-util-to-html'
+  notionast-util-to-html: 0.0.6

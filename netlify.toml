@@ -11,4 +11,4 @@
   publish = "public/"
 
   # Default build command.
-  command = "npm run start"
+  command = "npm run setup && npm run start"

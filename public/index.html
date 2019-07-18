@@ -7,7 +7,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <!-- Chrome, Firefox OS and Opera Status Bar Color -->
     <meta name="theme-color" content="#FFFFFF">
-    <title>Blog Post</title>
+    <title>Notion Page Downloader</title>
     <link rel="stylesheet" type="text/css" href="css/layout.css">
     <link rel="stylesheet" type="text/css" href="css/notion-color.css">
     <link rel="stylesheet" type="text/css" href="css/theme.css">
@@ -22,135 +22,228 @@
   <body>
     <div class="container">
       <div id="notionast-document">
-  <div id="20f83114-dc15-488e-b568-4c8c29821a4b" class="page-title">
-    <h1>Blog Post</h1>
+  <div id="0ec0e037-0cdc-452a-848a-6c04d18b05b3" class="page-title">
+    <h1>Notion Page Downloader</h1>
   </div>
-  <div id="a6132a8d-ca9e-4bfb-961d-efcda45f0db4">
-  <div class="block color-gray">
-  <span>A conversation with Ray Garcia, Jonathan Gold, Evan Kleiman, Bricia Lopez, and Carlos Salgado about the evolving role of Mexican cuisine in LA as culture, art, and craft</span>
-</div>
-</div><div id="b3fc1d41-817d-4300-a818-6b0ff7c88362">
-  <div class="block color-gray">
-  <span>Source: <a href="http://blogs.getty.edu/iris/5-food-icons-on-the-evolving-role-of-mexican-cuisine-in-la/">Food Icons on the Evolving Role of Mexican Cuisine in LA</a></span>
-</div>
-</div><div id="1dc5b8ea-cc74-43e6-b0f9-a3ecdf53c07e">
+  <div id="8cb11296-3647-4aac-aff3-e2b3e73967cc">
   <div class="block ">
-  <span>Together, critic Jonathan Gold, food scholar Evan Kleiman, and chefs Ray Garcia, Bricia Lopez, and Carlos Salgado have spent more than a lifetime preparing, eating, and writing about Latin American cuisine. Before their recent <a href="http://www.getty.edu/visit/cal/events/ev_2035.html">panel discussion</a> at the Getty, offered in conjunction with Pacific Standard Time, they sat down with us to reflect on the role of Mexican cuisine in the life of Los Angeles and how we might expand our taste buds to go deeper.</span>
+  <h4><span><a href="https://github.com/dragonman225/notion-page-downloader"><strong><span class="color-purple">View on Github</span></strong></a></span></h4>
 </div>
-</div><div id="77f91e07-4320-4493-bc56-ef109a5dada1">
-  <div class="column_list" style="display: flex; flex-wrap: wrap;">
-  <div class="column" style=" width: calc((100% - 46px) * 0.5); word-break: break-word;">
-  <div id="14427128-ac04-440a-9ed4-99a42a02006b">
+</div><div id="8f26c89c-4762-4200-973b-05ede242405e">
   <div class="block ">
-  <span><strong>SS: As a chef (or critic), </strong><strong>do you consider yourself an artist?</strong></span>
+  <h4><span><strong>What can users do ?</strong></span></h4>
 </div>
-</div><div id="c1bea25b-0d86-40fd-9b5d-177f1646b897">
+</div><div id="">
+  <ul>
+  <li>
+  <div class="block block--bulleted_list ">
+  <span><a href="#9eb9426e-d3f9-475b-85ff-e2023c5a214c">Run on a personal computer</a> : Download a Notion page as a HTML file.</span>
+</div>
+  
+</li><li>
+  <div class="block block--bulleted_list ">
+  <span><a href="#10169390-e83f-4427-af71-921ca2b72b55">Run on the cloud</a> : Host a static version of a Notion page on <strong><a href="https://www.netlify.com/">Netlify</a></strong>.</span>
+</div>
+  
+</li>
+</ul>
+</div><div id="ee458bfe-b5a3-40d2-a567-2d5abb13e5cf">
   <div class="block ">
-  <span><strong>EK:</strong> Art to me often has an intellectual component. I think of food preparation as a craft–I don’t think of it as art.</span>
+  <h4><span><strong>How does this work ?</strong></span></h4>
 </div>
-</div><div id="d8acc404-e2b6-4385-ab80-9e5e4fa84454">
+</div><div id="d0dfd194-df1e-4197-8176-b4099b515889">
   <div class="block ">
-  <span><strong>RG:</strong> My personal approach to food is more of a craftsman. I like having my tools in hand, sort of creating and building, and my approach is much more trial and error. It’s part social scientist, and part repair person or builder. I put food out, and wait for the reaction, and see what we can push, what we can improve.</span>
+  <span>This small application uses the following three of my projects.</span>
 </div>
+</div><div id="">
+  <ul>
+  <li>
+  <div class="block block--bulleted_list ">
+  <span><strong><a href="https://github.com/dragonman225/notionapi-agent">notionapi-agent</a></strong> - Node.js wrapper for Notion&#x27;s API.</span>
 </div>
-</div><div class="column" style="margin-left: 46px; width: calc((100% - 46px) * 0.5); word-break: break-word;">
-  <div id="a0f052c2-9baf-40c4-af8d-7620d83bd59b">
-  <div class="block block--image ">
-  <div style="width: 4032px; margin: 0.5em auto; max-width: 100%;">
-  <img src="https://s3-us-west-2.amazonaws.com/public.notion-static.com/98d6f347-ca2d-47b7-bf48-47511630182f/maarten-van-den-heuvel-400626-unsplash.jpg" style="width: 100%; object-fit: cover;">
+  
+</li><li>
+  <div class="block block--bulleted_list ">
+  <span><strong><a href="https://github.com/dragonman225/notionast-util-from-notionapi">notionast-util-from-notionapi</a></strong> - Convert Notion&#x27;s response objects of a page to a special tree structure.</span>
 </div>
+  
+</li><li>
+  <div class="block block--bulleted_list ">
+  <span><strong><a href="https://github.com/dragonman225/notionast-util-to-html">notionast-util-to-html</a></strong> - Render HTML from the special tree structure.</span>
 </div>
-</div><div id="ba53d42b-04ca-4421-922a-94e1f13c3790">
-  <div class="block color-gray">
-  <span>In the Getty Center auditorium for the recent “There Will Be Food“ panel.</span>
-</div>
-</div>
-</div>
-</div>
-</div><div id="160081c1-dff4-4c18-a068-d8572c0ecb2b">
+  
+</li>
+</ul>
+</div><div id="1d15de38-8774-4d91-bbca-a3e2f998a5af">
   <div class="block ">
-  <span><strong>JG:</strong> I’m a writer. Some people can call writers artists, some people cannot. In terms of food, there are people who approach cuisine from an art angle. Carlos Salgado is astonishing that way. His food is rooted in Mexican flavors, but there’s this level of abstraction in his food. Is it art as opposed to food? No, it’s food, but it’s being approached in a different way.</span>
+  <h3><span><strong>Demo</strong></span></h3>
 </div>
-</div><div id="546e545f-d928-4f21-882f-af7820c2c053">
+</div><div id="9a302de8-1545-47bb-8161-e3b7f33a70d7">
   <div class="block ">
-  <span><strong>CS:</strong> The highest point in my life is being with close family and friends, in the backyard over a fire, cooking over the course of many hours, sitting under the sky, and just filling this space with so much warmth. When I’m cooking there, I feel much more like an artist than when I worked in the highest-concept restaurants. They are like museums of food, accessible only with a certain level of literacy on the part of the diner, with a certain level of cultural experience and background.</span>
+  <span><strong><a href="https://notion2netlify.netlify.com/">View example page on Netlify</a></strong></span>
 </div>
-</div><div id="598bb3e6-efc0-42c1-8a0e-69056ec39b8b">
-  <div class="column_list" style="display: flex; flex-wrap: wrap;">
-  <div class="column" style=" width: calc((100% - 46px) * 0.5); word-break: break-word;">
-  <div id="ab9f0170-a4fe-464e-8e64-f973658528cd">
-  <div class="block block--image ">
-  <div style="width: 3630px; margin: 0.5em auto; max-width: 100%;">
-  <img src="https://s3-us-west-2.amazonaws.com/public.notion-static.com/88676b3e-f102-4307-a850-8c1cf98f7794/edgar-castrejon-459814-unsplash.jpg" style="width: 100%; object-fit: cover;">
-</div>
-</div>
-</div><div id="2b68713c-4f47-4cb3-b707-45f5c2840d13">
-  <div class="block color-gray">
-  <span>Tamale with pepitas at Taco María in Costa Mesa</span>
-</div>
-</div>
-</div><div class="column" style="margin-left: 46px; width: calc((100% - 46px) * 0.5); word-break: break-word;">
-  <div id="a74def8a-0c2e-4a34-ae08-40656068514e">
+</div><div id="167aa9e8-a867-478b-9046-2f8fec045fc3">
   <div class="block ">
-  <span><strong>SS: This panel represents Mexican American cuisine in LA. What other kinds of Latin American cuisine or</strong><strong> particular dishes from other regions do you like?</strong></span>
+  <span>Also, you can take a look at <strong><code>public&#x2F;index.html</code></strong>.</span>
 </div>
-</div><div id="75f4c852-539b-46d4-93a1-3d6fae90e63e">
+</div><div id="9eb9426e-d3f9-475b-85ff-e2023c5a214c">
   <div class="block ">
-  <span><strong>JG:</strong> El Salvadoreño cooking. It’s very basic, but the ways they use corn and greens and cheese. The fermentations are lovely.</span>
+  <h3><span><strong>Usage : Run on a personal computer</strong></span></h3>
 </div>
-</div><div id="a841f2aa-e43e-4efe-9866-89de2e412ce1">
+</div><div id="">
+  <ol>
+  <li>
+  <div class="block block--numbered_list ">
+  <span>Clone this repository.</span>
+</div>
+  <div id="c9576680-99a8-43d3-a4b6-6d94000370cc">
+  <div class="block block--code ">
+  <pre>
+  <code>
+<span>git clone https:&#x2F;&#x2F;github.com&#x2F;dragonman225&#x2F;notion-page-downloader.git</span>
+  </code>
+</pre>
+</div>
+</div>
+</li><li>
+  <div class="block block--numbered_list ">
+  <span>Go into the repository.</span>
+</div>
+  <div id="37ac4d70-2e35-4c0e-8c08-2dae804760aa">
+  <div class="block block--code ">
+  <pre>
+  <code>
+<span>cd notion-page-downloader</span>
+  </code>
+</pre>
+</div>
+</div>
+</li><li>
+  <div class="block block--numbered_list ">
+  <span>If you use <strong><code>npm</code></strong></span>
+</div>
+  <div id="0f0e1544-909e-4a44-8594-f9407b0ecead">
+  <div class="block block--code ">
+  <pre>
+  <code>
+<span>npm install</span>
+  </code>
+</pre>
+</div>
+</div><div id="bb1eab1a-1e91-4a6f-bb55-8375905ee958">
   <div class="block ">
-  <span><strong>EK:</strong> I love Guatemalan tamales, maybe more than Mexican tamales. The masa is often mixed with potato, so it’s much more tender. They’re wrapped in banana leaves, so there’s a different flavor. And the way they are filled is different; often there’s olives or raisins or prunes in them.</span>
+  <span>Or, if you use <strong><code>pnpm</code></strong></span>
+</div>
+</div><div id="3a58fdd3-78e4-431a-9cb6-0e49d95571f7">
+  <div class="block block--code ">
+  <pre>
+  <code>
+<span>pnpm install</span>
+  </code>
+</pre>
 </div>
 </div>
+</li><li>
+  <div class="block block--numbered_list ">
+  <span>Run setup script.</span>
+</div>
+  <div id="21393bb1-42df-4c7f-96ed-22d2a20ee580">
+  <div class="block block--code ">
+  <pre>
+  <code>
+<span>npm run setup</span>
+  </code>
+</pre>
 </div>
 </div>
-</div><div id="2ae5f195-6274-4d75-9447-8472023ca022">
+</li><li>
+  <div class="block block--numbered_list ">
+  <span>Edit the <strong><code>pageID</code></strong> field of <strong><code>config.json</code></strong>. Get the URL of a Notion page, for example, <strong><code>https:&#x2F;&#x2F;www.notion.so&#x2F;Notion-Page-Downloader-0ec0e0370cdc452a848a6c04d18b05b3</code></strong>, and the <strong><code>pageID</code></strong> should be <strong><code>0ec0e037-0cdc-452a-848a-6c04d18b05b3</code></strong>.</span>
+</div>
+  
+</li><li>
+  <div class="block block--numbered_list ">
+  <span>If the Notion page is private, you need to fill in your <strong><code>token</code></strong> in <strong><code>config.json</code></strong>. Follow this <strong><a href="https://github.com/dragonman225/notionapi-agent/blob/master/docs/obtain_token.md">guide</a></strong> to obtain your token.</span>
+</div>
+  
+</li><li>
+  <div class="block block--numbered_list ">
+  <span>Download the page as <strong><code>public&#x2F;index.html</code></strong>.</span>
+</div>
+  <div id="50880c23-f9f1-47a5-8014-4008f5d43992">
+  <div class="block block--code ">
+  <pre>
+  <code>
+<span>npm run start</span>
+  </code>
+</pre>
+</div>
+</div>
+</li>
+</ol>
+</div><div id="10169390-e83f-4427-af71-921ca2b72b55">
   <div class="block ">
-  <span><strong>BL:</strong> I love Peruvian food. Everything from the ceviche to rice and beans, all of the flavors. It has so much depth.</span>
+  <h3><span><strong>Usage : Run on the cloud</strong></span></h3>
 </div>
-</div><div id="e08842c9-b896-4dc4-9ba6-85e6e8cc7c12">
+</div><div id="">
+  <ol>
+  <li>
+  <div class="block block--numbered_list ">
+  <span><a href="https://app.netlify.com/start/deploy?repository=https://github.com/dragonman225/notion-page-downloader"><strong>Deploy to Netlify</strong></a></span>
+</div>
+  
+</li><li>
+  <div class="block block--numbered_list ">
+  <span>Go to the new Git repository Netlify created. Edit the <strong><code>pageID</code></strong> field of <strong><code>config.json</code></strong>. Get the URL of a <strong>PUBLIC</strong> Notion page, for example, <strong><code>https:&#x2F;&#x2F;www.notion.so&#x2F;Notion-Page-Downloader-0ec0e0370cdc452a848a6c04d18b05b3</code></strong>, and the <strong><code>pageID</code></strong> should be <strong><code>0ec0e037-0cdc-452a-848a-6c04d18b05b3</code></strong>.</span>
+</div>
+  
+</li><li>
+  <div class="block block--numbered_list ">
+  <span>Netlify will deploy your page automatically.</span>
+</div>
+  
+</li>
+</ol>
+</div><div id="">
+  <ul>
+  <li>
+  <div class="block block--bulleted_list ">
+  <span>To update the static page on Netlify, go to <em>Deploys</em> tab, click on <em>Trigger deploy &gt; Deploy site</em>.</span>
+</div>
+  
+</li><li>
+  <div class="block block--bulleted_list ">
+  <span>Private Notion pages can&#x27;t be deployed. (Technically, it&#x27;s possible, but saving your Notion login token in a Git repository means <span class="color-red">anyone with access to the repository can control your Notion account</span>.)</span>
+</div>
+  
+</li>
+</ul>
+</div><div id="6276874d-0ec9-4220-9a6c-5b4fb3496fa6">
   <div class="block ">
-  <span><strong>CS:</strong> Baja coastal cuisine. The freshness of it–you eat seafood in the morning because it just came in. Very simply prepared, very intense, briny ocean flavors: big clams, oysters, shrimp. Big, big flavors.</span>
+  <h3><span><strong>Supported Blocks</strong></span></h3>
 </div>
-</div><div id="88961e30-c682-4a38-926b-88c8a5ac7ccb">
-  <div class="column_list" style="display: flex; flex-wrap: wrap;">
-  <div class="column" style=" width: calc((100% - 46px) * 0.5); word-break: break-word;">
-  <div id="21ac3267-e367-4f45-acea-b4f8c5bcf09c">
+</div><div id="b0a065fb-5e29-41b2-a2de-afbd83388cd7">
   <div class="block ">
-  <span><strong>SS: If you could recommend one dish or element in Mexican-American cuisine that a total beginner must try, what would it be?</strong></span>
+  <span>Please view the list <strong><a href="https://github.com/dragonman225/notionast-util-to-html">here</a></strong>.</span>
 </div>
-</div><div id="1410ca79-5f07-4443-a7eb-fa1294b6a629">
+</div><div id="b29b66d6-3e53-4428-9a6e-7f284bff3718">
   <div class="block ">
-  <span><strong>EK:</strong> Tacos, because anything you eat with your hands is less intimidating than something that requires silverware. It takes you back to the permission of childhood, and that joy of just eating that is super direct. There is nothing in between you and the food.</span>
+  <h3><span><strong>Upgrade from Previous Versions</strong></span></h3>
 </div>
-</div><div id="64614d34-919e-4f46-a9fc-810c12a3a230">
-  <div class="block ">
-  <span><strong>BL:</strong> I think mole is a really good one. A lot of people think of it as a chocolate sauce, and yes, it has chocolate, but it also has like 18 other things. I always recommend three things: mole, the barbacoa, and the chiles rellenos at my restaurant, just because I think they are universally delicious.</span>
+</div><div id="">
+  <ol>
+  <li>
+  <div class="block block--numbered_list ">
+  <span>Delete <strong><code>node_modules&#x2F;</code></strong> and <strong><code>package_lock.json</code></strong>.</span>
 </div>
+  
+</li><li>
+  <div class="block block--numbered_list ">
+  <span>Run <strong><code>npm install</code></strong> or <strong><code>pnpm install</code></strong>.</span>
 </div>
-</div><div class="column" style="margin-left: 46px; width: calc((100% - 46px) * 0.5); word-break: break-word;">
-  <div id="33332238-4c7d-41aa-9edc-2c9870a8c90b">
-  <div class="block block--image ">
-  <div style="width: 4153px; margin: 0.5em auto; max-width: 100%;">
-  <img src="https://s3-us-west-2.amazonaws.com/public.notion-static.com/07d3113c-a91d-4b8f-83b5-7324575b74e2/christine-siracusa-363257-unsplash.jpg" style="width: 100%; object-fit: cover;">
-</div>
-</div>
-</div><div id="a3251228-fd7a-4dfe-aa0a-fa857b822331">
-  <div class="block color-gray">
-  <span>Dishes at Broken Spanish, in Downtown LA.</span>
-</div>
-</div>
-</div>
-</div>
-</div><div id="81d147a5-1bcc-4088-ba52-72dac6714d4f">
-  <div class="block ">
-  <span><strong>CS:</strong> I would say try more and different types of chilies, and the salsas that result from them. The range of flavors, and balance of flavors, is really exciting, and is my favorite part of Mexican food.</span>
-</div>
-</div><div id="30a76f51-fffc-4925-b70f-668169ec1a7b">
-  <div class="block ">
-  <span><strong>RG:</strong> Put aside your thoughts and limitations on what Mexican food can be, and how much it can cost. Especially in LA, there is almost a cult-like following for cheap Mexican food, for the greasy taco truck. There is something people find exciting about that, but I think it’s good to stop and wonder why your taco costs a dollar. There must be a lot behind it that allows you to eat a dollar taco. It probably doesn’t include a living wage, a safe work environment, or the best quality ingredients for you and your body. We could understand where our food is coming from and be a bit more conscious in our choices.</span>
-</div>
+  
+</li>
+</ol>
 </div>
 </div>
     </div>
