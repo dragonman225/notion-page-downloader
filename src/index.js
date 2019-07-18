@@ -3,6 +3,7 @@ const path = require('path')
 const downloadPageAsTree = require('notionast-util-from-notionapi')
 const { toHTML } = require('notionast-util-to-html')
 
+const { getPageIDfromNotionURL, isValidDashID } = require('./notion-utils')
 const myAgent = require('./agent')
 const config = require('../config')
 
@@ -10,8 +11,14 @@ main()
 
 async function main() {
   try {
-    let pageID = process.env['PAGEID'] ? process.env['PAGEID'] : config.pageID
-    console.log(`Downloading page: ${pageID}`)
+    let notionPageURL = process.env['NOTION_PAGE_URL']
+      ? process.env['NOTION_PAGE_URL']
+      : config.notionPageURL
+    console.log(`Downloading page: ${notionPageURL}`)
+    let pageID = getPageIDfromNotionURL(notionPageURL)
+    if (!isValidDashID(pageID)) {
+      throw new Error('Fail to extract pageID from URL.')
+    }
     let tree = await downloadPageAsTree(pageID, myAgent)
     let contentHTML = toHTML(tree)
     let pageHTML = renderPage(tree.data.title[0][0], contentHTML)
