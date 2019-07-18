@@ -10,7 +10,8 @@ main()
 
 async function main() {
   try {
-    let pageID = config.pageID
+    let pageID = process.env['PAGEID'] ? process.env['PAGEID'] : config.pageID
+    console.log(`Downloading page: ${pageID}`)
     let tree = await downloadPageAsTree(pageID, myAgent)
     let contentHTML = toHTML(tree)
     let pageHTML = renderPage(tree.data.title[0][0], contentHTML)

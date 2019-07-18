@@ -63,11 +63,19 @@ Also, you can take a look at `public/index.html`.
 ## Usage : Run on the cloud
 
 1. [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/dragonman225/notion-page-downloader)
-2. Go to the new Git repository Netlify created. Edit the `pageID` field of `config.json`. Get the URL of a **PUBLIC** Notion page, for example, `https://www.notion.so/Notion-Page-Downloader-0ec0e0370cdc452a848a6c04d18b05b3`, and the `pageID` should be `0ec0e037-0cdc-452a-848a-6c04d18b05b3`.
-3. Netlify will deploy your page automatically.
 
-* To update the static page on Netlify, go to *Deploys* tab, click on *Trigger deploy > Deploy site*.
-* Private Notion pages can't be deployed. (Technically, it's possible, but saving your Notion login token in a Git repository means anyone with access to the repository can control your Notion account.)
+2. Set `PAGEID` environment variable.
+
+   ![img](assets/netlify_env_var.png)
+
+   Get the URL of a **PUBLIC** Notion page, for example, `https://www.notion.so/Notion-Page-Downloader-0ec0e0370cdc452a848a6c04d18b05b3`, and the `PAGEID` should be `0ec0e037-0cdc-452a-848a-6c04d18b05b3`.
+
+3. Trigger deploy in **Deploys** tab.
+
+   ![img](assets/netlify_trigger_dep.png)
+
+* To update the static page on Netlify, do step 3 again.
+* Private Notion pages can't be deployed. (Technically, it's possible, but giving your Notion login token to the cloud is dangerous. A Notion token is so powerful that anyone or any machine with it can control your Notion account.)
 
 ## Supported Blocks
 
