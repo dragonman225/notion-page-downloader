@@ -14,4 +14,4 @@
   command = "npm run setup && npm run start"
 
 [template.environment]
-  NOTION_PAGE_URL = "https://www.notion.so/Notion-Page-Downloader-0ec0e0370cdc452a848a6c04d18b05b3"
+  NOTION_PAGE_URL = "URL of a PUBLIC Notion page"
