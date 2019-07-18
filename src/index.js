@@ -14,7 +14,7 @@ async function main() {
     let tree = await downloadPageAsTree(pageID, myAgent)
     let contentHTML = toHTML(tree)
     let pageHTML = renderPage(tree.data.title[0][0], contentHTML)
-    const pageHTMLFile = path.join(__dirname, '../data/index.html')
+    const pageHTMLFile = path.join(__dirname, '../public/index.html')
     fs.writeFileSync(pageHTMLFile, pageHTML, { encoding: 'utf-8' })
   } catch (error) {
     console.error(error)

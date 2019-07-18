@@ -11,7 +11,7 @@ Although recently Notion starts providing an option to export to HTML, my module
 
 ## Demo
 
-This repository includes a rendering result as `data/index.html`. The original page is the [Blog Post](<https://www.notion.so/Blog-Post-20f83114dc15488eb5684c8c29821a4b>) template.
+This repository includes a rendering result as `public/index.html`. The original page is the [Blog Post](<https://www.notion.so/Blog-Post-20f83114dc15488eb5684c8c29821a4b>) template.
 
 ## Upgrade from Previous Versions
 
@@ -56,7 +56,7 @@ This repository includes a rendering result as `data/index.html`. The original p
 1. If you want to download your private pages, open `config.json`, fill in your token (Follow this [guide](https://github.com/dragonman225/notionapi-agent/blob/master/docs/obtain_token.md) to obtain your token). Otherwise, go to the next step.
 2. Find the page ID of the page you want to download from browser's devtool, and fill in the `pageID` field of `config.json`. It must contain dashes, like `66e28cec-8105-48c3-a406-1513126766b0`.
 3. `npm run start`
-4. Result is saved as `data/index.html`.
+4. Result is saved as `public/index.html`.
 
 ## Supported Blocks
 
