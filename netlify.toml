@@ -12,3 +12,6 @@
 
   # Default build command.
   command = "npm run setup && npm run start"
+
+[template.environment]
+  PAGEID = "0ec0e037-0cdc-452a-848a-6c04d18b05b3"
