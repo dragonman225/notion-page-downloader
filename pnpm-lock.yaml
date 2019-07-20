@@ -1,13 +1,34 @@
 dependencies:
   notionapi-agent: 0.4.0
   notionast-util-from-notionapi: 0.2.0
-  notionast-util-to-html: 0.0.6
+  notionast-util-to-html: 0.0.8
 lockfileVersion: 5.1
 packages:
   /@dnpr/make-request/0.1.0:
     dev: false
     resolution:
       integrity: sha512-9pSiJJXrk7RtLu0nF7vxxBjRB7ibuBZ8l4Ha/u/dOGgk4X2biFHbWIjW2t+IcirgiDkhkSHqta6J5S1Lt2EvlA==
+  /clipboard/2.0.4:
+    dependencies:
+      good-listener: 1.2.2
+      select: 1.1.2
+      tiny-emitter: 2.1.0
+    dev: false
+    optional: true
+    resolution:
+      integrity: sha512-Vw26VSLRpJfBofiVaFb/I8PVfdI1OxKcYShe6fm0sP/DtmiWQNCjhM/okTvdCo0G+lMMm1rMYbk4IK4x1X+kgQ==
+  /delegate/3.2.0:
+    dev: false
+    optional: true
+    resolution:
+      integrity: sha512-IofjkYBZaZivn0V8nnsMJGBr4jVLxHDheKSW88PyxS5QC4Vo9ZbZVvhzlSxY87fVq3STR6r+4cGepyHkcWOQSw==
+  /good-listener/1.2.2:
+    dependencies:
+      delegate: 3.2.0
+    dev: false
+    optional: true
+    resolution:
+      integrity: sha1-1TswzfkxPf+33JoNR3CWqm0UXFA=
   /notionapi-agent/0.4.0:
     dependencies:
       '@dnpr/make-request': 0.1.0
@@ -18,11 +39,29 @@ packages:
     dev: false
     resolution:
       integrity: sha512-qY/rdQPwJioGWncsBpwqNnQ3AtEhSHSXsELKE57q8kdphJommfY8Nak3PqrC5kX7ZCPTr1iA861/Bn5BIan5Bw==
-  /notionast-util-to-html/0.0.6:
+  /notionast-util-to-html/0.0.8:
+    dependencies:
+      prismjs: 1.16.0
     dev: false
     resolution:
-      integrity: sha512-fWrZbgyusd5ttFZW7RQTP5dOT6M6+mlFjfYmTEqOBEugDnfkltTcWWjeK2UoBc9f1sdY1Iwh3mY7XU5QPDPfiw==
+      integrity: sha512-4xjTTHw1jXxN3SrHyBDupYDnxmQPSf7GTO0wCcf3Kb1I496f46GfPAwJFWU7vxDEPTR27oiqX1x2KAPSKFrFgg==
+  /prismjs/1.16.0:
+    dev: false
+    optionalDependencies:
+      clipboard: 2.0.4
+    resolution:
+      integrity: sha512-OA4MKxjFZHSvZcisLGe14THYsug/nF6O1f0pAJc0KN0wTyAcLqmsbE+lTGKSpyh+9pEW57+k6pg2AfYR+coyHA==
+  /select/1.1.2:
+    dev: false
+    optional: true
+    resolution:
+      integrity: sha1-DnNQrN7ICxEIUoeG7B1EGNEbOW0=
+  /tiny-emitter/2.1.0:
+    dev: false
+    optional: true
+    resolution:
+      integrity: sha512-NB6Dk1A9xgQPMoGqC5CVXn123gWyte215ONT5Pp5a0yt4nlEoO1ZWeCwpncaekPHXO60i47ihFnZPiRPjRMq4Q==
 specifiers:
   notionapi-agent: ~0.4.0
   notionast-util-from-notionapi: ~0.2.0
-  notionast-util-to-html: 0.0.6
+  notionast-util-to-html: 0.0.8
