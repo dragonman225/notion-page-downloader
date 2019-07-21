@@ -1,7 +1,7 @@
 dependencies:
   notionapi-agent: 0.4.0
   notionast-util-from-notionapi: 0.2.0
-  notionast-util-to-html: 0.0.8
+  notionast-util-to-html: 0.0.9
 lockfileVersion: 5.1
 packages:
   /@dnpr/make-request/0.1.0:
@@ -39,12 +39,12 @@ packages:
     dev: false
     resolution:
       integrity: sha512-qY/rdQPwJioGWncsBpwqNnQ3AtEhSHSXsELKE57q8kdphJommfY8Nak3PqrC5kX7ZCPTr1iA861/Bn5BIan5Bw==
-  /notionast-util-to-html/0.0.8:
+  /notionast-util-to-html/0.0.9:
     dependencies:
       prismjs: 1.16.0
     dev: false
     resolution:
-      integrity: sha512-4xjTTHw1jXxN3SrHyBDupYDnxmQPSf7GTO0wCcf3Kb1I496f46GfPAwJFWU7vxDEPTR27oiqX1x2KAPSKFrFgg==
+      integrity: sha512-UDA3E+FcNyTQoNNPQ85sNUz0ckYn1OQW0dCeTelgKD4hwmPF8NiouxnVipVSnG3kAU2EBoIwgEZkba6qUAOPzA==
   /prismjs/1.16.0:
     dev: false
     optionalDependencies:
@@ -64,4 +64,4 @@ packages:
 specifiers:
   notionapi-agent: ~0.4.0
   notionast-util-from-notionapi: ~0.2.0
-  notionast-util-to-html: 0.0.8
+  notionast-util-to-html: 0.0.9

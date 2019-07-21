@@ -1,6 +1,6 @@
 {
   "name": "notion-page-downloader",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "description": "Download a Notion page as a HTML file.",
   "main": "src/index.js",
   "scripts": {
@@ -16,6 +16,6 @@
   "dependencies": {
     "notionapi-agent": "~0.4.0",
     "notionast-util-from-notionapi": "~0.2.0",
-    "notionast-util-to-html": "0.0.8"
+    "notionast-util-to-html": "0.0.9"
   }
 }
