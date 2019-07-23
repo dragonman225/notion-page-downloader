@@ -8,7 +8,7 @@ const { createAgent } = require('./agent')
 
 cli.version('0.4.0')
 cli.usage('[options] <url>')
-cli.option('-t, --token', 'Notion login token for authentication.')
+cli.option('-t, --token <string>', 'Notion login token for authentication.')
 cli.option('-v, --verbose', 'Show status messages.')
 cli.parse(process.argv)
 
@@ -21,7 +21,7 @@ async function main() {
     let url = process.argv[process.argv.length - 1]
     let pageID = getPageIDfromNotionURL(url)
     let agentOpts = {
-      token: cli.opts().token
+      token: cli.token
     }
     
     if (!isValidDashID(pageID)) {
@@ -34,7 +34,7 @@ async function main() {
     let tree = await downloadPageAsTree(pageID, createAgent(agentOpts))
     let contentHTML = toHTML(tree)
     let pageHTML = renderPage(tree.data.title[0][0], contentHTML)
-    fs.writeFileSync(`Page-${pageID}.html`, pageHTML, { encoding: 'utf-8' })
+    fs.writeFileSync(`${pageID}.html`, pageHTML, { encoding: 'utf-8' })
   } catch (error) {
     console.error(error)
   }
