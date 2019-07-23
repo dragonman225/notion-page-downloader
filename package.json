@@ -5,7 +5,8 @@
   "main": "src/index.js",
   "scripts": {
     "setup": "node src/setup.js",
-    "start": "node src/index.js"
+    "start": "node src/index.js",
+    "build": "pkg -t latest-linux-x64,latest-macos-x64,latest-win-x64 -o dist/npd src/index.js"
   },
   "repository": {
     "type": "git",
@@ -14,8 +15,15 @@
   "author": "dragonman225",
   "license": "MIT",
   "dependencies": {
-    "notionapi-agent": "~0.4.0",
+    "commander": "^2.20.0",
+    "notionapi-agent": "~0.4.1",
     "notionast-util-from-notionapi": "~0.2.0",
     "notionast-util-to-html": "0.0.9"
+  },
+  "devDependencies": {
+    "@dnpr/make-request": "^0.1.0",
+    "prismjs": "^1.17.1",
+    "eslint": "^6.1.0",
+    "pkg": "^4.4.0"
   }
 }

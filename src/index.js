@@ -1,29 +1,40 @@
 const fs = require('fs')
-const path = require('path')
+const cli = require('commander')
 const downloadPageAsTree = require('notionast-util-from-notionapi')
 const { toHTML } = require('notionast-util-to-html')
 
 const { getPageIDfromNotionURL, isValidDashID } = require('./notion-utils')
-const myAgent = require('./agent')
-const config = require('../config')
+const { createAgent } = require('./agent')
+
+cli.version('0.4.0')
+cli.usage('[options] <url>')
+cli.option('-t, --token', 'Notion login token for authentication.')
+cli.option('-v, --verbose', 'Show status messages.')
+cli.parse(process.argv)
+
+if (isArgsEmpty(process.argv)) cli.help(processHelp)
 
 main()
 
 async function main() {
   try {
-    let notionPageURL = process.env['NOTION_PAGE_URL']
-      ? process.env['NOTION_PAGE_URL']
-      : config.notionPageURL
-    console.log(`Downloading page: ${notionPageURL}`)
-    let pageID = getPageIDfromNotionURL(notionPageURL)
-    if (!isValidDashID(pageID)) {
-      throw new Error('Fail to extract pageID from URL.')
+    let url = process.argv[process.argv.length - 1]
+    let pageID = getPageIDfromNotionURL(url)
+    let agentOpts = {
+      token: cli.opts().token
     }
-    let tree = await downloadPageAsTree(pageID, myAgent)
+    
+    if (!isValidDashID(pageID)) {
+      console.error('npd: Fail to extract pageID from URL.')
+      process.exit()
+    }
+
+    if (cli.verbose) console.log(`npd: Downloading ${url}, pageID ${pageID}`)
+
+    let tree = await downloadPageAsTree(pageID, createAgent(agentOpts))
     let contentHTML = toHTML(tree)
     let pageHTML = renderPage(tree.data.title[0][0], contentHTML)
-    const pageHTMLFile = path.join(__dirname, '../public/index.html')
-    fs.writeFileSync(pageHTMLFile, pageHTML, { encoding: 'utf-8' })
+    fs.writeFileSync(`Page-${pageID}.html`, pageHTML, { encoding: 'utf-8' })
   } catch (error) {
     console.error(error)
   }
@@ -60,4 +71,16 @@ function renderPage(pageTitle, contentHTML) {
   </body>
 </html>`
   return pageHTML
+}
+
+function isArgsEmpty(argv) {
+  if (argv[0].indexOf('node') !== '-1') {
+    return argv.length === 2
+  } else {
+    return argv.length === 1
+  }
+}
+
+function processHelp(str) {
+  return str.replace('index', 'npd')
 }

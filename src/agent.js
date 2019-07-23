@@ -1,10 +1,7 @@
 const NotionAgent = require('notionapi-agent')
 
-const config = require('../config')
+module.exports = { createAgent }
 
-const options = {
-  token: config.token
+function createAgent(options) {
+  return new NotionAgent(options)
 }
-const agent = new NotionAgent(options)
-
-module.exports = agent

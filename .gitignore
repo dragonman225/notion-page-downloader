@@ -24,4 +24,4 @@ node_modules/
 
 # Project
 TODO.md
-config.json
+dist/
