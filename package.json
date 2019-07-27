@@ -5,7 +5,8 @@
   "main": "src/index.js",
   "scripts": {
     "setup": "node src/setup.js",
-    "start": "node src/index.js"
+    "start": "node src/index.js",
+    "test": "node test/lib.spec.js"
   },
   "repository": {
     "type": "git",
